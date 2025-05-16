@@ -1,5 +1,5 @@
 const getCityWeather = async (city) => {
-    const api = "a44a4b51cc586a2a98c94c9ad82b9273";
+    const api = import.meta.env.VITE_OPENWEATHER_API_KEY;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}`;
 
     try {

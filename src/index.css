@@ -6,14 +6,17 @@
 @plugin "@tailwindcss/typography";
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: linear-gradient(135deg, #181a23 0%, #23243a 100%);
+  background-color: #101014;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: #e5e7ef;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   transition: background 0.4s;
 }
-
 :root {
   --accent-blue: #60a5fa;
   --accent-green: #34d399;

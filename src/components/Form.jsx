@@ -42,7 +42,7 @@ const Form = () => {
     return (
         <>
             <div className='sticky top-0 z-10 flex items-center justify-center pb-10'>
-                <div className='bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg border border-white/20 w-fit'>
+                <div className='bg-white/5 backdrop-blur-md p-8 rounded-xl shadow-lg border border-white/20 w-fit'>
                     <div className='flex gap-6 justify-center'>
                         <select defaultValue="Pick a color" className="select bg-white/20 backdrop-blur-sm border-white/20 text-white" onChange={handleCountryChange}>
                             <option disabled={true}>Pick a Country</option>

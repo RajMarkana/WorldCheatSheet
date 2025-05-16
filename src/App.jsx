@@ -4,7 +4,7 @@ import Form from './components/Form'
 const App = () => {
   return (
     <>
-      <div className='min-h-screen h-full bg-gradient-to-b from-slate-800 to-black'>
+      <div className='min-h-screen h-full bg-gradient-to-b from-transparent to-black/50'>
         <div className='flex justify-center items-center gap-2'>
           <img src="./logo (1).png" alt="" className='w-20 h-20' />
           <h1 className='font-bold text-5xl text-center py-10'>WorldCheatSheet</h1>

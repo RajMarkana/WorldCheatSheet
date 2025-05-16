@@ -1,8 +1,12 @@
-
-
 # WorldCheatSheet 🌍
 
 **WorldCheatSheet** is a modern, AI-powered travel and city information web app. Instantly get local tips, budget guides, shopping info, language basics, safety advice, and more for any city in the world—all in one beautiful, responsive interface.
+
+---
+
+## 🚀 Live Demo
+
+👉 [Try WorldCheatSheet Online](https://worldcheatsheet.vercel.app/)
 
 ---
 
@@ -25,9 +29,6 @@
 
 - **Local Apps Guide:**  
   Top transport, food delivery, and payment apps for the city.
-
-- **Transport Guide:**  
-  Public transport, taxi services, and practical travel tips.
 
 - **Weather & Map:**  
   Live weather and a city map for quick orientation.
@@ -73,6 +74,8 @@ npm run dev
 ```
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+Or use the **live demo**: [https://worldcheatsheet.vercel.app/](https://worldcheatsheet.vercel.app/)
+
 ---
 
 ## Usage
@@ -80,9 +83,11 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 1. **Select a country, state, and city** from the dropdowns.
 2. Instantly view:
    - Weather, map, and local time
-   - AI-generated city guide, language, safety, budget, shopping, and transport info
+   - AI-generated city guide, language, safety, budget, and shopping
    - Local apps and tips
 3. Explore the info cards and use the links for more details.
+
+Or just try it online: [https://worldcheatsheet.vercel.app/](https://worldcheatsheet.vercel.app/)
 
 ---
 
@@ -116,5 +121,5 @@ If you find a bug or want to request a feature, please [open an issue](https://g
 
 ---
 
-**Enjoy exploring the world with WorldCheatSheet! 🌏✨**
+**Enjoy exploring the world with [WorldCheatSheet!](https://worldcheatsheet.vercel.app/) 🌏✨**
 

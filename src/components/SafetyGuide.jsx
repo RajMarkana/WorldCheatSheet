@@ -19,8 +19,8 @@ const SafetyGuide = ({ city, country }) => {
       const info = await getSafetyInfo(city, country);
       setSafetyInfo(info);
     } catch (err) {
-      console.error('Error fetching safety info:', err);
-      setError(err.message);
+      // console.error('Error fetching safety info:', err);
+      setError("Not Available");
     } finally {
       setLoading(false);
     }

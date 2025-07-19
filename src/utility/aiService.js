@@ -8,7 +8,7 @@ import { PromptTemplate } from "@langchain/core/prompts";
 const model = new ChatGroq({
   apiKey: import.meta.env.VITE_GROQ_API_KEY,
   model: "meta-llama/llama-4-scout-17b-16e-instruct",
-  temperature: 0,
+  temperature: 0.6,
 });
 
 

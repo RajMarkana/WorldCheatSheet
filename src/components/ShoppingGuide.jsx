@@ -31,7 +31,7 @@ const ShoppingGuide = ({ city, country }) => {
         parsed.paymentInfo = JSON.parse(parsed.paymentInfo);
       }
     } catch (error) {
-      console.error('Error parsing shopping data:', error);
+      // console.error('Error parsing shopping data:', error);
     }
     
     return parsed;
@@ -48,8 +48,8 @@ const ShoppingGuide = ({ city, country }) => {
       const info = await getShoppingInfo(city, country);
       setShoppingInfo(parseShoppingData(info));
     } catch (err) {
-      console.error('Error fetching shopping info:', err);
-      setError(err.message);
+      // console.error('Error fetching shopping info:', err);
+      setError("Not Available");
     } finally {
       setLoading(false);
     }

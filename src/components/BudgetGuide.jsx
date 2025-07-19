@@ -35,7 +35,7 @@ const BudgetGuide = ({ city, country, state }) => {
         parsed.tippingGuidelines = JSON.parse(parsed.tippingGuidelines);
       }
     } catch (error) {
-      console.error('Error parsing budget data:', error);
+      // console.error('Error parsing budget data:', error);
     }
     
     return parsed;
@@ -85,8 +85,8 @@ const BudgetGuide = ({ city, country, state }) => {
       setBudgetInfo(parsed);
       setFallbackLevel(`country: ${country}`);
     } catch (err) {
-      console.error('Error fetching budget info:', err);
-      setError(err.message);
+      // console.error('Error fetching budget info:', err);
+      setError("Not Available");
     } finally {
       setLoading(false);
     }

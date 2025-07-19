@@ -10,32 +10,32 @@ const TransportGuide = ({ city, country }) => {
 
   const fetchTransportInfo = async () => {
     if (!city || !country) {
-      console.log('No city or country provided:', { city, country });
+      // console.log('No city or country provided:', { city, country });
       return;
     }
     setLoading(true);
     setError(null);
     
     try {
-      console.log('Fetching transport info for:', { city, country });
+      // console.log('Fetching transport info for:', { city, country });
       const info = await getTransportInfo(city, country);
-      console.log('Received transport info:', info);
+      // console.log('Received transport info:', info);
       setTransportInfo(info);
     } catch (err) {
-      console.error('Error fetching transport info:', err);
-      setError(err.message);
+      // console.error('Error fetching transport info:', err);
+      setError("Not Available");
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    console.log('TransportGuide useEffect triggered:', { city, country });
+    // console.log('TransportGuide useEffect triggered:', { city, country });
     fetchTransportInfo();
   }, [city, country]);
 
   if (loading) {
-    console.log('TransportGuide is loading');
+    // console.log('TransportGuide is loading');
     return (
       <div className="min-h-[400px] grid place-items-center">
         <div className="animate-pulse text-gray-500 text-xl">Loading transport information... 🚌</div>
@@ -44,7 +44,7 @@ const TransportGuide = ({ city, country }) => {
   }
 
   if (error) {
-    console.log('TransportGuide error:', error);
+    // console.log('TransportGuide error:', error);
     return (
       <div className="min-h-[400px] grid place-items-center">
         <div className="text-red-500">Error: {error} 😕</div>
@@ -53,11 +53,11 @@ const TransportGuide = ({ city, country }) => {
   }
 
   if (!transportInfo) {
-    console.log('No transport info available');
+    // console.log('No transport info available');
     return null;
   }
 
-  console.log('Rendering TransportGuide with data:', transportInfo);
+  // console.log('Rendering TransportGuide with data:', transportInfo);
 
   return (
     <div className="p-4 max-w-7xl mx-auto">

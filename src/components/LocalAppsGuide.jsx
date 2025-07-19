@@ -55,7 +55,7 @@ const LocalAppsGuide = ({ city, country }) => {
         }));
       }
     } catch (error) {
-      console.error('Error parsing apps data:', error);
+      // console.error('Error parsing apps data:', error);
     }
     
     return parsed;
@@ -75,8 +75,8 @@ const LocalAppsGuide = ({ city, country }) => {
       // console.log('Received local apps info:', info);
       setAppsInfo(parseAppsData(info));
     } catch (err) {
-      console.error('Error fetching local apps info:', err);
-      setError(err.message);
+      // console.error('Error fetching local apps info:', err);
+      setError("Not Available");
     } finally {
       setLoading(false);
     }

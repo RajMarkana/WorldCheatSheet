@@ -16,12 +16,12 @@ const AICityGuide = ({ city, country }) => {
       
       try {
         const info = await getCityInfo(city, country);
-        console.log("=================");
-        console.log(info);
+        // console.log("=================");
+        // console.log(info);
 
         setCityInfo(info);
       } catch (err) {
-        setError(err.message);
+        setError("Not Available");
       } finally {
         setLoading(false);
       }

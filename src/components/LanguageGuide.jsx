@@ -19,8 +19,8 @@ const LanguageGuide = ({ city, country }) => {
             const info = await getLanguageInfo(city, country);
             setLanguageInfo(info);
         } catch (err) {
-            console.error('Error fetching language info:', err);
-            setError(err.message);
+            // console.error('Error fetching language info:', err);
+           setError("Not Available");
         } finally {
             setLoading(false);
         }
